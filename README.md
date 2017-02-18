@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/hassaku/hubot-suggest.svg?branch=master)](https://travis-ci.org/hassaku/hubot-suggest)
+
 hubot-suggest
 =============
 

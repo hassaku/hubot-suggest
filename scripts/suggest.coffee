@@ -64,5 +64,8 @@ module.exports = (robot) ->
   robot.catchAll (msg) ->
     message = msg.message
     message.text = message.text or ''
-    showSuggestions(robot.commands, message, robot.adapter, robot.name) if message.text.includes robot.name
+    if robot.adapterName is "hipchat"
+      showSuggestions(robot.commands, message, robot.adapter, robot.name) if message.text.includes robot.name
+    else
+      showSuggestions(robot.commands, message, robot.adapter, robot.name) if message.text.match ///^@?#{robot.name}\ +.*$///i
     msg.finish()
