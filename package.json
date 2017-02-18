@@ -10,9 +10,21 @@
     "name": "hassaku",
     "email": "hassaku.apps@gmail.com"
   },
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/hassaku/hubot-suggest"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coffee-script": "^1.7.0",
+    "hubot-test-helper": "^1.5.1",
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
+  },
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script/register tests"
+  }
 }
