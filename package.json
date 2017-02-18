@@ -1,6 +1,6 @@
 {
   "name": "hubot-suggest",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Suggest hubot commands when not found",
   "main": "index.coffee",
   "keywords": [
